@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Admoin;
+namespace App\Http\Livewire\Admin;
 
 use Livewire\Component;
 use App\Models\Category;
@@ -38,6 +38,6 @@ class AdminEditCategoryComponent extends Component
 
     public function render()
     {
-        return view('livewire.admoin.admin-edit-category-component')->layout('layouts.base');
+        return view('livewire.admin.admin-edit-category-component')->layout('layouts.base');
     }
 }
