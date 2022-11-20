@@ -17,6 +17,10 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/color-01.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/flexslider.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"/>
+
     @livewireStyles
 </head>
 <body class="home-page home-01 ">
@@ -87,6 +91,9 @@
                                                     </li>
                                                     <li class="menu-item">
                                                         <a title="Manage Home Categories" href="{{ route('admin.homecategories') }}">Manage Home Categories</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a title="Sale Setting" href="{{ route('admin.sale') }}">Sale Setting</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
@@ -472,6 +479,10 @@
 	<script src="{{ asset('assets/js/jquery.sticky.js') }}"></script>
 	<script src="{{ asset('assets/js/functions.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
     @livewireScripts
     @stack('scripts')
 </body>
